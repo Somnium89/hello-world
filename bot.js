@@ -47,7 +47,7 @@ client.on('message', message => {
   var role2 = message.guild.roles.find('name', 'apprentice');
   message.member.removeRole(role2.id);
   console.log('Role succesfully removed!');
-  var channel = client.channels.get('617001966341455892').send("a new apprentice has approached! Teach " + message.member +" well!");
+  var channel = client.channels.get('617001966341455892').send("A new apprentice has approached! Teach " + message.member +" well!");
 }
 else if(args[0] === 'american')
 {
@@ -57,7 +57,7 @@ else if(args[0] === 'american')
   var role2 = message.guild.roles.find('name', 'apprentice');
   message.member.removeRole(role2.id);
   console.log('Role succesfully removed!');
-  var channel = client.channels.get('617002379224809473').send("a new apprentice has approached! Teach " + message.member +" well!");
+  var channel = client.channels.get('617002379224809473').send("A new apprentice has approached! Teach " + message.member +" well!");
 }
 else if(args[0] === 'asian')
 {
@@ -67,7 +67,7 @@ else if(args[0] === 'asian')
   var role2 = message.guild.roles.find('name', 'apprentice');
   message.member.removeRole(role2.id);
   console.log('Role succesfully removed!');
-  var channel = client.channels.get('617001689639288862').send("a new apprentice has approached! Teach " + message.member +" well!");
+  var channel = client.channels.get('617001689639288862').send("A new apprentice has approached! Teach " + message.member +" well!");
 }
 
 }
