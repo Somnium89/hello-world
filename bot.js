@@ -26,7 +26,7 @@ client.on('guildMemberAdd', member => {
   member.addRole(role.id);
   var guildChannel = member.guild.channels.find(channel => channel.id === '607835294191845377');
   setTimeout(function () {
-  guildChannel.send("Welcome " + member + " to the world of Neon Noodles. Are you ready for what it takes to become a Master Chef? Well, we’ll find out. It will be a long and difficult journey but I have faith in you.\n\nTo become a true master, you will need to travel the world and indulge in the local cuisines. Your journey will start at your home turf. What’s your local cuisine?\n\nAmerican, European or Asian?").catch(console.error) }, 10);
+  guildChannel.send("Welcome " + member + " to the world of Neon Noodles. Are you ready for what it takes to become a Master Chef? Well, we’ll find out. It will be a long and difficult journey but I have faith in you.\n\nTo become a true master, you will need to travel the world and indulge in the local cuisines. Your journey will start at your home turf. What’s your local cuisine?\n\nAmerican, European or Asian?\n(you must respond with one of these three options in order for the server to open up)").catch(console.error) }, 10);
 });
 
 //listen for when user choses
