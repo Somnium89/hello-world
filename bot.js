@@ -26,7 +26,7 @@ client.on('guildMemberAdd', member => {
   member.addRole(role.id);
   var guildChannel = member.guild.channels.find(channel => channel.id === '607835294191845377');
   setTimeout(function () {
-  guildChannel.send("Welcome " + member + " to the world of Neon Noodles. Are you ready for what it takes to become a Master Chef? Well, we’ll find out. It will be a long and difficult journey but I have faith in you.\n\nTo become a true master, you will need to travel the world and indulge in the local cuisines. Your journey will start at your home turf. What’s your local cuisine?\n\nAmerican, European or Asian?\n\n(you must respond with one of these three options in order for the server to open up)").catch(console.error) }, 10);
+  guildChannel.send("Welcome " + member + " to the world of Neon Noodles. Are you ready for what it takes to become a Master Chef? Well, we’ll find out. It will be a long and difficult journey but I have faith in you.\n\nTo become a true master, you will need to travel the world and indulge in the local cuisines. Your journey will start at your home turf. What’s your preferred region foodwise?\n\nAmericas, Europe or Asia?\n\n(you must respond with one of these three options in order for the server to open up)").catch(console.error) }, 10);
 });
 
 //listen for when user choses
@@ -39,7 +39,7 @@ client.on('message', message => {
 
     var args = message.content.toLowerCase().split(" ");
     console.log(args); //logs every word by itself
-    if(args[0] === 'european')
+    if(args[0] === 'europe')
 {
   var role = message.guild.roles.find('name', 'Europe');
   console.log("Role foundd!");
@@ -49,9 +49,9 @@ client.on('message', message => {
   console.log('Role succesfully removed!');
   var channel = client.channels.get('617001966341455892').send("A new apprentice has approached! Teach " + message.member +" well!");
 }
-else if(args[0] === 'american')
+else if(args[0] === 'americas')
 {
-  var role = message.guild.roles.find('name', 'America');
+  var role = message.guild.roles.find('name', 'Americas');
   console.log("Role found!");
   message.member.addRole(role.id);
   var role2 = message.guild.roles.find('name', 'apprentice');
@@ -59,7 +59,7 @@ else if(args[0] === 'american')
   console.log('Role succesfully removed!');
   var channel = client.channels.get('617002379224809473').send("A new apprentice has approached! Teach " + message.member +" well!");
 }
-else if(args[0] === 'asian')
+else if(args[0] === 'asia')
 {
   var role = message.guild.roles.find('name', 'Asia');
   console.log("Role found!");
