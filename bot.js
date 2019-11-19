@@ -59,6 +59,16 @@ else if(args[0] === 'americas')
   console.log('Role succesfully removed!');
   var channel = client.channels.get('617002379224809473').send("A new apprentice has approached! Teach " + message.member +" well!");
 }
+else if(args[0] === 'america')
+{
+  var role = message.guild.roles.find('name', 'Americas');
+  console.log("Role found!");
+  message.member.addRole(role.id);
+  var role2 = message.guild.roles.find('name', 'apprentice');
+  message.member.removeRole(role2.id);
+  console.log('Role succesfully removed!');
+  var channel = client.channels.get('617002379224809473').send("A new apprentice has approached! Teach " + message.member +" well!");
+}   
 else if(args[0] === 'asia')
 {
   var role = message.guild.roles.find('name', 'Asia');
