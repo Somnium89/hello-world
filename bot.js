@@ -262,7 +262,34 @@ else if(args[0] === 'asia')
 
 }
 
+else if(args[0] === 'aisa')
 
+
+{
+
+
+ var role = message.guild.roles.find('name', 'Asia');
+
+
+ console.log("Role found!");
+
+
+ message.member.addRole(role.id);
+
+
+ var role2 = message.guild.roles.find('name', 'apprentice');
+
+
+ message.member.removeRole(role2.id);
+
+
+ console.log('Role succesfully removed!');
+
+
+ var channel = client.channels.get('617003017358671882').send("User " + message.member +" has joined Asia!");
+
+
+}
 
 
 
