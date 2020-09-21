@@ -167,7 +167,7 @@ client.on('message', message => {
  console.log('Role succesfully removed!');
 
 
- var channel = client.channels.get('617003017358671882').send("User " + message.member +" has joined Europe!");
+ //var channel = client.channels.get('617003017358671882').send("User " + message.member +" has joined Europe!");
 
 
 }
@@ -197,7 +197,7 @@ else if(args[0] === 'americas')
  console.log('Role succesfully removed!');
 
 
- var channel = client.channels.get('617003017358671882').send("User " + message.member +" has joined Americas!");
+ //var channel = client.channels.get('617003017358671882').send("User " + message.member +" has joined Americas!");
 
 
 }
@@ -227,7 +227,7 @@ else if(args[0] === 'america')
  console.log('Role succesfully removed!');
 
 
- var channel = client.channels.get('617003017358671882').send("User " + message.member +" has joined Americas!");
+ //var channel = client.channels.get('617003017358671882').send("User " + message.member +" has joined Americas!");
 
 
 }  
@@ -257,7 +257,7 @@ else if(args[0] === 'asia')
  console.log('Role succesfully removed!');
 
 
- var channel = client.channels.get('617003017358671882').send("User " + message.member +" has joined Asia!");
+ //var channel = client.channels.get('617003017358671882').send("User " + message.member +" has joined Asia!");
 
 
 }
@@ -286,7 +286,7 @@ else if(args[0] === 'aisa')
  console.log('Role succesfully removed!');
 
 
- var channel = client.channels.get('617003017358671882').send("User " + message.member +" has joined Asia!");
+ //var channel = client.channels.get('617003017358671882').send("User " + message.member +" has joined Asia!");
 
 
 }
